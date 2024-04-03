@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    />
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="./styles/main.css">
+    <link rel="stylesheet" href="../styles/dashboard.css">
+
+    <title>ApplyBot | Dashboard</title>
+  </head>
+  <body>
+    <div class="container-fluid">
+        <div class="row">
+            <!-- Sidear -->
+            <div class="col-md-2 bg-light d-none d-md-block sidebar">
+                <div class="left-sidebar">
+                    <img src="../assests/logo.svg" alt="Apply bot logo" class="logo">
+                    <ul class="nav flex-column sidebar-nav">
+                        <li class="nav-item">
+                          <a class="nav-link active" href="#">
+                            <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M9.87986 2.84016L4.48986 7.04016C3.58986 7.74016 2.85986 9.23016 2.85986 10.3602V17.7702C2.85986 20.0902 4.74986 21.9902 7.06986 21.9902H18.6499C20.9699 21.9902 22.8599 20.0902 22.8599 17.7802V10.5002C22.8599 9.29016 22.0499 7.74016 21.0599 7.05016L14.8799 2.72016C13.4799 1.74016 11.2299 1.79016 9.87986 2.84016Z" stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M12.8599 17.9902V14.9902" stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            Dashboard
+                          </a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="#">
+                            <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M10.1699 14.7002L11.6699 16.2002L15.6699 12.2002" stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M10.8599 6H14.8599C16.8599 6 16.8599 5 16.8599 4C16.8599 2 15.8599 2 14.8599 2H10.8599C9.85986 2 8.85986 2 8.85986 4C8.85986 6 9.85986 6 10.8599 6Z" stroke="black" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M16.8599 4.01953C20.1899 4.19953 21.8599 5.42953 21.8599 9.99953V15.9995C21.8599 19.9995 20.8599 21.9995 15.8599 21.9995H9.85986C4.85986 21.9995 3.85986 19.9995 3.85986 15.9995V9.99953C3.85986 5.43953 5.52986 4.19953 8.85986 4.01953" stroke="black" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>        
+                            Jobs Tracker
+                          </a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="#">
+                            <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M8.85986 12.2002H15.8599" stroke="#292D32" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M8.85986 16.2002H13.2399" stroke="#292D32" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M10.8599 6H14.8599C16.8599 6 16.8599 5 16.8599 4C16.8599 2 15.8599 2 14.8599 2H10.8599C9.85986 2 8.85986 2 8.85986 4C8.85986 6 9.85986 6 10.8599 6Z" stroke="#292D32" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M16.8599 4.01953C20.1899 4.19953 21.8599 5.42953 21.8599 9.99953V15.9995C21.8599 19.9995 20.8599 21.9995 15.8599 21.9995H9.85986C4.85986 21.9995 3.85986 19.9995 3.85986 15.9995V9.99953C3.85986 5.43953 5.52986 4.19953 8.85986 4.01953" stroke="#292D32" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>                                
+                            Resume Builder
+                          </a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="#">
+                            <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M8.85986 2V5" stroke="black" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M16.8599 2V5" stroke="black" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M7.85986 13H15.8599" stroke="black" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M7.85986 17H12.8599" stroke="black" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M16.8599 3.5C20.1899 3.68 21.8599 4.95 21.8599 9.65V15.83C21.8599 19.95 20.8599 22.01 15.8599 22.01H9.85986C4.85986 22.01 3.85986 19.95 3.85986 15.83V9.65C3.85986 4.95 5.52986 3.69 8.85986 3.5H16.8599Z" stroke="black" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>                                
+                            Companies
+                          </a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="#">
+                            <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M19 21.6198C18.12 21.8798 17.08 21.9998 15.86 21.9998H9.85997C8.63997 21.9998 7.59997 21.8798 6.71997 21.6198C6.93997 19.0198 9.60997 16.9697 12.86 16.9697C16.11 16.9697 18.78 19.0198 19 21.6198Z" stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M15.8599 2H9.85986C4.85986 2 2.85986 4 2.85986 9V15C2.85986 18.78 3.99986 20.85 6.71986 21.62C6.93986 19.02 9.60986 16.97 12.8599 16.97C16.1099 16.97 18.7799 19.02 18.9999 21.62C21.7199 20.85 22.8599 18.78 22.8599 15V9C22.8599 4 20.8599 2 15.8599 2ZM12.8599 14.17C10.8799 14.17 9.27986 12.56 9.27986 10.58C9.27986 8.60002 10.8799 7 12.8599 7C14.8399 7 16.4399 8.60002 16.4399 10.58C16.4399 12.56 14.8399 14.17 12.8599 14.17Z" stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M16.4398 10.58C16.4398 12.56 14.8398 14.17 12.8598 14.17C10.8798 14.17 9.27979 12.56 9.27979 10.58C9.27979 8.60002 10.8798 7 12.8598 7C14.8398 7 16.4398 8.60002 16.4398 10.58Z" stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>                                
+                            My Profile
+                          </a>
+                        </li>
+                      </ul>
+                </div>
+            </div>
+            <!-- main -->
+            <main role="main" class="col-md-9 ml-sm-auto col-lg-10 px-4">
+                <div class="overview-header">
+                    <h3 class="">Dashboard</h3>
+                    <button type="button" class="btn btn-md main-btn">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M17 13.4V16.4C17 20.4 15.4 22 11.4 22H7.6C3.6 22 2 20.4 2 16.4V12.6C2 8.6 3.6 7 7.6 7H10.6" stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M17.0001 13.4H13.8001C11.4001 13.4 10.6001 12.6 10.6001 10.2V7L17.0001 13.4Z" stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M11.6001 2H15.6001" stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M7 5C7 3.34 8.34 2 10 2H12.62" stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M21.9999 8V14.19C21.9999 15.74 20.7399 17 19.1899 17" stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M22 8H19C16.75 8 16 7.25 16 5V2L22 8Z" stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                            <span>New Application</span> 
+                    </button>
+                </div>
+                <!-- dashboard stats -->
+                <div class="overview">
+                    <h4>My Overview</h4>
+                    <div class="overview-cards">
+                        <div class="card">
+                            <div class="border"></div>
+                            <span class="card-title">My Daily Limit</span>
+                            <div class="progress" role="progressbar" aria-label="Example with label" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+                                <div class="progress-bar" style="width: 25%">25%</div>
+                              </div>
+                            <span class="limit-info">40% used, 10 Jobs Applied</span>
+                        </div>
+                        <div class="card">
+                            <div class="border"></div>
+                            <span class="card-title">Plan Details <span class="plan-expire"><strong>Expires On</strong> 10th, 2024</span></span>
+                            <div class="plan-info">
+                                <h6>Basic Plan</h6>
+                                <a href="#" class="upgrade">upgrade plan</a>
+                            </div>
+                            <span class="limit-info">You are in <strong>BASIC PLAN</strong> valid until August 10th 2024</span>
+                        </div>
+                        <div class="card">
+                            <div class="border"></div>
+                            <span class="card-title">Total Jobs Limitst</span>
+                            <div class="progress" role="progressbar" aria-label="Example with label" aria-valuenow="22.4" aria-valuemin="0" aria-valuemax="100">
+                                <div class="progress-bar" style="width: 22.4%">25%</div>
+                              </div>
+                            <span class="limit-info">22.4% used.</span>
+                        </div>
+                    </div>
+                </div>
+                
+            </main>
+        </div>
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+      integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+      integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
