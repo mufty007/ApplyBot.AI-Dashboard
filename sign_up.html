@@ -22,7 +22,164 @@
     <title>ApplyBOT | SignIP</title>
   </head>
   <body>
-    <h1>Sign UP</h1>
+    <div class="nav">
+        <div class="logo"><img src="assests/logo-white.svg" alt="Apply bot logo"></div>
+        
+        <div class="nav-links">
+          <nav>
+            <ul>
+              <li><a href="#">Features</a></li>
+              <li><a href="#">Pricing</a></li>
+              <li><a href="#">Help</a></li>
+            </ul>
+          </nav>
+          <div class="buttons">
+            <a href="#" class="signup">SignUp</a>
+            <a href="#" class="signup">LogIn</a>
+          </div>
+        </div>
+
+    </div>
+      <div class="form-wrapper">
+          <div class="form">
+            <form id="multi-step-form">
+              <!-- Step 1: Personal Information -->
+              <div class="step-content active" id="step-1">
+                <h3>Step 1: Personal Information</h3>
+                <div class="form-group">
+                  <label for="fullName">Full Name</label>
+                  <input type="text" class="form-control" id="fullName" placeholder="Enter your full name" required>
+                </div>
+                <div class="form-group">
+                  <label for="email">Email Address</label>
+                  <input type="email" class="form-control" id="email" placeholder="Enter your email address" required>
+                </div>
+                <div class="form-group">
+                  <label for="password">Password</label>
+                  <input type="password" class="form-control" id="password" placeholder="Enter your password" required>
+                </div>
+                <div class="form-group">
+                  <label for="confirmPassword">Confirm Password</label>
+                  <input type="password" class="form-control" id="confirmPassword" placeholder="Confirm your password" required>
+                </div>
+              </div>
+    
+              <!-- Step 2: Profile Setup -->
+              <div class="step-content" id="step-2">
+                <h3>Step 2: Profile Setup</h3>
+                <div class="form-group">
+                  <label for="resume">Upload Resume</label>
+                  <input type="file" class="form-control-file" id="resume">
+                </div>
+                <div class="form-group">
+                  <label for="phoneNumber">Phone Number</label>
+                  <input type="tel" class="form-control" id="phoneNumber" placeholder="Enter your phone number">
+                </div>
+                <div class="form-group">
+                  <label for="location">Location</label>
+                  <input type="text" class="form-control" id="location" placeholder="Enter your location">
+                </div>
+                <div class="form-group">
+                  <label for="currentJobTitle">Current Job Title</label>
+                  <input type="text" class="form-control" id="currentJobTitle" placeholder="Enter your current job title">
+                </div>
+              </div>
+    
+              <!-- Step 3: Career Preferences -->
+              <div class="step-content" id="step-3">
+                <h3>Step 3: Career Preferences</h3>
+                <div class="form-group">
+                  <label for="desiredJobTitle">Desired Job Title</label>
+                  <input type="text" class="form-control" id="desiredJobTitle" placeholder="Enter your desired job title">
+                </div>
+                <div class="form-group">
+                  <label for="preferredIndustry">Preferred Industry</label>
+                  <input type="text" class="form-control" id="preferredIndustry" placeholder="Enter your preferred industry">
+                </div>
+                <div class="form-group">
+                  <label for="desiredLocation">Desired Job Location(s)</label>
+                  <input type="text" class="form-control" id="desiredLocation" placeholder="Enter your desired job location(s)">
+                </div>
+                <div class="form-group">
+                  <label for="employmentType">Employment Type</label>
+                  <select class="form-control" id="employmentType">
+                    <option value="">Select employment type</option>
+                    <option value="full-time">Full-time</option>
+                    <option value="part-time">Part-time</option>
+                    <option value="contract">Contract</option>
+                    <option value="freelance">Freelance</option>
+                  </select>
+                </div>
+              </div>
+    
+              <!-- Step 4: Skills and Experience -->
+              <div class="step-content" id="step-4">
+                <h3>Step 4: Skills and Experience</h3>
+                <div class="form-group">
+                  <label for="skills">Skills</label>
+                  <input type="text" class="form-control" id="skills" placeholder="Enter your skills">
+                </div>
+                <div class="form-group">
+                  <label for="experience">Years of Experience</label>
+                  <input type="number" class="form-control" id="experience" placeholder="Enter years of experience">
+                </div>
+                <div class="form-group">
+                  <label for="educationLevel">Education Level</label>
+                  <input type="text" class="form-control" id="educationLevel" placeholder="Enter your education level">
+                </div>
+                <div class="form-group">
+                  <label for="previousJobTitles">Previous Job Titles</label>
+                  <input type="text" class="form-control" id="previousJobTitles" placeholder="Enter previous job titles">
+                </div>
+              </div>
+          <!-- Step 5: Additional Information -->
+          <div class="step-content" id="step-5
+              <h3>Step 5: Additional Information</h3>
+            <div class="form-group">
+              <label for="workAuthorization">Work Authorization</label>
+              <input type="text" class="form-control" id="workAuthorization" placeholder="Enter your work authorization">
+            </div>
+            <div class="form-group">
+              <label for="linkedinProfile">LinkedIn Profile</label>
+              <input type="url" class="form-control" id="linkedinProfile" placeholder="Enter your LinkedIn profile URL">
+            </div>
+            <div class="form-group">
+              <label for="portfolioLink">Portfolio Link</label>
+              <input type="url" class="form-control" id="portfolioLink" placeholder="Enter your portfolio link">
+            </div>
+            <div class="form-group">
+              <label for="certifications">Professional Certifications</label>
+              <input type="text" class="form-control" id="certifications" placeholder="Enter your professional certifications">
+            </div>
+          </div>
+           <!-- Step 6: Privacy and Terms -->
+           <div class="step-content" id="step-6">
+            <h3>Step 6: Privacy and Terms</h3>
+            <div class="form-check">
+              <input type="checkbox" class="form-check-input" id="termsAgreement" required>
+              <label class="form-check-label" for="termsAgreement">I agree to the Terms of Service</label>
+            </div>
+            <div class="form-check">
+              <input type="checkbox" class="form-check-input" id="privacyPolicyAgreement" required>
+              <label class="form-check-label" for="privacyPolicyAgreement">I agree to the Privacy Policy</label>
+            </div>
+                      <!-- Step 7: Confirmation -->
+          <div class="step-content" id="step-7">
+            <h3>Step 7: Confirmation</h3>
+            <p>Please review your information before submitting:</p>
+            <!-- Confirmation Summary Fields -->
+          </div>
+          </div>
+          
+          <!-- Navigation Buttons -->
+          <div class="buttons">
+            <button type="button" class="btn" id="prev-btn" disabled>Previous</button>
+            <button type="button" class="btn" id="next-btn">Next</button>
+          </div>
+        </form>
+      </div>
+    </div>
+</body>
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
@@ -41,5 +198,54 @@
       integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
       crossorigin="anonymous"
     ></script>
+
+    <script>
+      // JavaScript for multi-step form
+      const form = document.getElementById('multi-step-form');
+      const prevBtn = document.getElementById('prev-btn');
+      const nextBtn = document.getElementById('next-btn');
+      const steps = form.querySelectorAll('.step-content');
+      let currentStep = 0;
+  
+      // Show current step
+      const showStep = (stepIndex) => {
+        steps.forEach((step, index) => {
+          if (index === stepIndex) {
+            step.classList.add('active');
+          } else {
+            step.classList.remove('active');
+          }
+        });
+        updateButtons();
+      };
+  
+      // Update navigation buttons
+      const updateButtons = () => {
+        prevBtn.disabled = currentStep <= 0;
+        nextBtn.textContent = currentStep === steps.length - 1 ? 'Submit' : 'Next';
+      };
+  
+      // Event listener for Next button
+      nextBtn.addEventListener('click', () => {
+        if (currentStep < steps.length - 1) {
+          currentStep++;
+          showStep(currentStep);
+        } else {
+          // Submit form or handle final step
+          form.submit(); // Example: Submitting the form
+        }
+      });
+  
+      // Event listener for Previous button
+      prevBtn.addEventListener('click', () => {
+        if (currentStep > 0) {
+          currentStep--;
+          showStep(currentStep);
+        }
+      });
+  
+      // Show initial step
+      showStep(currentStep);
+    </script>
   </body>
 </html>
