@@ -17,12 +17,51 @@
     />
 
     <!-- Styles -->
-    <link rel="stylesheet" href="./styles/main.css">
+    <link rel="stylesheet" href="../styles/reset.css">
+    <link rel="stylesheet" href="../styles/main.css">
 
-    <title>ApplyBOT | SignIn</title>
+    <title>ApplyBOT | SignIP</title>
   </head>
   <body>
-    <h1>Sign In</h1>
+    <div class="nav">
+        <div class="logo"><img src="../assests/logo-white.svg" alt="Apply bot logo"></div>
+        
+        <div class="nav-links">
+          <nav>
+            <ul>
+              <li><a href="#">Features</a></li>
+              <li><a href="#">Pricing</a></li>
+              <li><a href="#">Help</a></li>
+            </ul>
+          </nav>
+          <div class="buttons">
+            <a href="#" class="signup">SignUp</a>
+            <a href="#" class="signup">LogIn</a>
+          </div>
+        </div>
+
+    </div>
+      <div class="form-wrapper">
+          <div class="form">
+            <form id="form">
+              <!-- Step 1: Personal Information -->
+              <div class="step-content active" id="step-1">
+                <h3>SignIn to your account</h3>
+                <div class="form-group">
+                  <label for="email">Email Address</label>
+                  <input type="email" class="form-control" id="email" placeholder="Email address" required>
+                </div>
+                <div class="form-group">
+                  <label for="password">Password</label>
+                  <input type="password" class="form-control" id="password" placeholder="Password" required>
+                </div>
+              </div>
+
+              <button type="button" class="btn" id="signup">SignIn</button>
+        </form>
+      </div>
+    </div>
+</body>
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
@@ -41,5 +80,15 @@
       integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
       crossorigin="anonymous"
     ></script>
+
+    <script>
+
+      const signIn = document.getElementById('signIn')
+      // Event listener for Next button
+      signIn.addEventListener('click', () => {
+          // Redirect to dashboard page
+          window.location.href = 'dashboard.html';
+      });
+    </script>
   </body>
 </html>
